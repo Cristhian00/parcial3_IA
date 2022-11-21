@@ -28,7 +28,7 @@ while True:
     # Creamos el filtro de seguridad para evitar errores
     if len(manosInfo) != 0:
         dedos = detector.dedosarriba()
-        #print(dedos)
+        print(dedos)
         contar = dedos.count(1)
         if contar == 0:
             cv2.putText(frame, str(contar), (485, 430), cv2.FONT_HERSHEY_PLAIN, 10, (0, 255, 0), 25)
@@ -41,16 +41,6 @@ while True:
         elif contar == 4:
             cv2.putText(frame, str(contar), (485, 430), cv2.FONT_HERSHEY_PLAIN, 10, (0, 255, 0), 25)
         elif contar == 5:
-            cv2.putText(frame, str(contar), (485, 430), cv2.FONT_HERSHEY_PLAIN, 10, (0, 255, 0), 25)
-        elif contar == 6:
-            cv2.putText(frame, str(contar), (485, 430), cv2.FONT_HERSHEY_PLAIN, 10, (0, 255, 0), 25)
-        elif contar == 7:
-            cv2.putText(frame, str(contar), (485, 430), cv2.FONT_HERSHEY_PLAIN, 10, (0, 255, 0), 25)
-        elif contar == 8:
-            cv2.putText(frame, str(contar), (485, 430), cv2.FONT_HERSHEY_PLAIN, 10, (0, 255, 0), 25)
-        elif contar == 9:
-            cv2.putText(frame, str(contar), (485, 430), cv2.FONT_HERSHEY_PLAIN, 10, (0, 255, 0), 25)
-        elif contar == 10:
             cv2.putText(frame, str(contar), (485, 430), cv2.FONT_HERSHEY_PLAIN, 10, (0, 255, 0), 25)
 
 
